@@ -1,0 +1,103 @@
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+
+    &__upper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &__profile {
+            position: absolute;
+            border-radius: 50%;
+            border: 4px solid white;
+            top: 85px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 65px;
+            &__na {
+                display: flex;
+
+                :not(:last-child) {
+                    color: $desaturatedBlue;
+                    margin-right: 10px;
+                    font-weight: 700;
+                }
+
+                :last-child {
+                    color: $darkGray;
+                    font-weight: 400;
+                }
+            }
+
+            > label {
+                color: $darkGray;
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__lower {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        &__followers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            :first-child {
+                font-weight: 700;
+            }
+
+            :last-child {
+                font-weight: 400;
+                color: $darkGray;
+                font-size: 12px;
+            }
+        }
+
+        &__likes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            :first-child {
+                font-weight: 700;
+            }
+
+            :last-child {
+                font-weight: 400;
+                color: $darkGray;
+                font-size: 12px;
+            }
+        }
+
+        &__photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            :first-child {
+                font-weight: 700;
+            }
+
+            :last-child {
+                font-weight: 400;
+                color: $darkGray;
+                font-size: 12px;
+            }
+        }
+    }
+}
